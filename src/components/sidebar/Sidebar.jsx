@@ -1,3 +1,4 @@
+import React from 'react';
 // Style
 import './sidebar.scss';
 // Icons

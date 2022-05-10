@@ -3,6 +3,7 @@ import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 // Styles
 import './featured.scss';
 import 'react-circular-progressbar/dist/styles.css';
+import React from 'react';
 // Icons
 import MoreVertRoundedIcon from '@mui/icons-material/MoreVertRounded';
 import KeyboardArrowDownRoundedIcon from '@mui/icons-material/KeyboardArrowDownRounded';

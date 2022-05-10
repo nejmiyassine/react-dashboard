@@ -1,3 +1,4 @@
+import React from 'react';
 // Components
 import Chart from '../../components/chart/Chart';
 import Featured from '../../components/featured/Featured';
@@ -23,6 +24,9 @@ const Home = () => {
         <div className='charts'>
           <Featured />
           <Chart />
+        </div>
+        <div className="listContainer">
+          
         </div>
       </div>
     </section>

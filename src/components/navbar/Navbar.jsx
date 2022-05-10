@@ -1,3 +1,4 @@
+import React from 'react';
 // Icons
 import SearchRoundedIcon from '@mui/icons-material/SearchRounded';
 import LanguageRoundedIcon from '@mui/icons-material/LanguageRounded';

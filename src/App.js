@@ -1,3 +1,4 @@
+import React from 'react';
 // Dependecies
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 // Pages

@@ -3,7 +3,7 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 // Pages
 import Home from './pages/home/Home';
-import About from './pages/about/About';
+import List from './pages/list/List';
 
 const App = () => {
   return (
@@ -12,7 +12,7 @@ const App = () => {
         <Routes>
           <Route path='/'>
             <Route index element={<Home />} />
-            <Route path='about' element={<About />} />
+            <Route path='list' element={<List />} />
           </Route>
         </Routes>
       </BrowserRouter>

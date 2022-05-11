@@ -93,7 +93,10 @@ const TableList = () => {
               <TableCell className='tableCell'>${row.amount}</TableCell>
               <TableCell className='tableCell'>{row.method}</TableCell>
               <TableCell className='tableCell'>
-                <span className={`status ${row.status}`}>{row.status}</span>
+                <div className={`status ${row.status}`}>
+                  <div className={`statusDot ${row.status}`} />
+                  {row.status}
+                </div>
               </TableCell>
             </TableRow>
           ))}

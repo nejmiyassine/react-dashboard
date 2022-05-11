@@ -22,9 +22,9 @@
   }
 
   .center {
-    padding-left: 10px;
     height: calc(100vh - 100px);
     overflow-y: auto;
+    padding-left: 10px;
 
     &::-webkit-scrollbar {
       width: 5px;
@@ -57,11 +57,6 @@
         padding: 5px;
         cursor: pointer;
 
-        &:hover {
-          background-color: #111;
-          color: #fff;
-        }
-
         .icon {
           font-size: 18px;
           margin-right: 10px;
@@ -69,8 +64,18 @@
         }
 
         span {
+          color: #000;
           font-size: 13px;
           font-weight: 600;
+        }
+
+        &:hover {
+          background-color: #222;
+          color: #fff;
+
+          span {
+            color: #fff;
+          }
         }
       }
     }
@@ -84,20 +89,16 @@
       width: 20px;
       height: 20px;
       border-radius: 5px;
-      border: 1px solid #676;
       cursor: pointer;
       margin: 5px;
+      border: 1px solid #676;
 
       &:nth-child(1) {
-        background-color: #eee;
+        background-color: #fff;
       }
 
       &:nth-child(2) {
-        background-color: #111;
-      }
-
-      &:nth-child(3) {
-        background-color: #767;
+        background-color: #222;
       }
     }
   }

@@ -1,4 +1,7 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { Link } from 'react-router-dom';
+// DarkModeContext
+import { DarkModeContext } from '../../context/darkModeContext';
 // Style
 import './sidebar.scss';
 // Icons
@@ -16,11 +19,18 @@ import AccountCircleRoundedIcon from '@mui/icons-material/AccountCircleRounded';
 import LogoutRoundedIcon from '@mui/icons-material/LogoutRounded';
 
 const Sidebar = () => {
+  const { dispatch } = useContext(DarkModeContext);
+
+  const LightMode = () => dispatch({ type: 'LIGHT' });
+  const DarkMode = () => dispatch({ type: 'DARK' });
+
   return (
     <div className='sidebar'>
       {/* Logo */}
       <div className='top'>
-        <span className='logo'>Let's Code</span>
+        <Link to='/' className='logo'>
+          Let's Code
+        </Link>
       </div>
 
       {/* Horizontal Link */}
@@ -30,19 +40,25 @@ const Sidebar = () => {
       <div className='center'>
         <ul>
           <p className='title'>MAIN</p>
-          <li>
-            <DashboardRoundedIcon className='icon' />
-            <span>Dashboard</span>
-          </li>
+          <Link to='/'>
+            <li>
+              <DashboardRoundedIcon className='icon' />
+              <span>Dashboard</span>
+            </li>
+          </Link>
           <p className='title'>LISTS</p>
-          <li>
-            <PersonRoundedIcon className='icon' />
-            <span>Users</span>
-          </li>
-          <li>
-            <StoreRoundedIcon className='icon' />
-            <span>Products</span>
-          </li>
+          <Link to='/users'>
+            <li>
+              <PersonRoundedIcon className='icon' />
+              <span>Users</span>
+            </li>
+          </Link>
+          <Link to='/products'>
+            <li>
+              <StoreRoundedIcon className='icon' />
+              <span>Products</span>
+            </li>
+          </Link>
           <li>
             <ShoppingBagRoundedIcon className='icon' />
             <span>Orders</span>
@@ -87,9 +103,8 @@ const Sidebar = () => {
 
       {/* Colors */}
       <div className='bottom'>
-        <div className='colorOption'></div>
-        <div className='colorOption'></div>
-        <div className='colorOption'></div>
+        <div className='colorOption' onClick={LightMode}></div>
+        <div className='colorOption' onClick={DarkMode}></div>
       </div>
     </div>
   );

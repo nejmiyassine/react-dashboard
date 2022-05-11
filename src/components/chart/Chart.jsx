@@ -1,5 +1,5 @@
 import React from 'react';
-// Chart Dependecie
+// Chart Elements
 import {
   AreaChart,
   Area,
@@ -13,7 +13,7 @@ import {
 // Style
 import './chart.scss';
 
-const Chart = () => {
+const Chart = ({ aspect, title }) => {
   const data = [
     {
       name: 'January',
@@ -43,8 +43,8 @@ const Chart = () => {
 
   return (
     <div className='chart'>
-      <div className='title'>Last 6 months (Revenue)</div>
-      <ResponsiveContainer width='100%' height='100%'>
+      <div className='title'>{title}</div>
+      <ResponsiveContainer width='100%' height='100%' aspect={aspect}>
         <AreaChart
           width={730}
           height={250}

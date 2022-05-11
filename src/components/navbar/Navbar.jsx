@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useContext } from 'react';
+// DarkModeContext
+import { DarkModeContext } from '../../context/darkModeContext';
 // Icons
 import SearchRoundedIcon from '@mui/icons-material/SearchRounded';
 import LanguageRoundedIcon from '@mui/icons-material/LanguageRounded';
@@ -11,6 +13,9 @@ import ListRoundedIcon from '@mui/icons-material/ListRounded';
 import './navbar.scss';
 
 const Navbar = () => {
+  const { dispatch } = useContext(DarkModeContext);
+  const ToggleMode = () => dispatch({ type: 'TOGGLE' });
+
   return (
     <div className='navbar'>
       <div className='wrapper'>
@@ -24,7 +29,7 @@ const Navbar = () => {
             English
           </div>
           <div className='item'>
-            <DarkModeRoundedIcon className='icon' />
+            <DarkModeRoundedIcon className='icon' onClick={ToggleMode} />
           </div>
           <div className='item'>
             <FullscreenExitRoundedIcon className='icon' />

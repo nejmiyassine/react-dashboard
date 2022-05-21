@@ -2,8 +2,6 @@ import React from 'react';
 // Components
 import Chart from '../../components/chart/Chart';
 import Featured from '../../components/featured/Featured';
-import Navbar from '../../components/navbar/Navbar';
-import Sidebar from '../../components/sidebar/Sidebar';
 import TableList from '../../components/table/Table';
 import Widget from '../../components/widget/Widget';
 // Style
@@ -12,10 +10,7 @@ import './home.scss';
 const Home = () => {
   return (
     <section className='home'>
-      <Sidebar />
-
-      <div className='homeContainer'>
-        <Navbar />
+      <div className='container'>
         <div className='widgets'>
           <Widget type='user' />
           <Widget type='order' />

@@ -1,9 +1,16 @@
 .new {
   display: flex;
   width: 100%;
+  min-height: 100vh;
 
   .newContainer {
     flex: 6;
+
+    .bottom {
+      @media (max-width: 500px) {
+        flex-direction: column;
+      }
+    }
 
     .top,
     .bottom {
@@ -28,6 +35,7 @@
           height: 100px;
           border-radius: 50%;
           object-fit: cover;
+          margin-bottom: 20px;
         }
       }
 

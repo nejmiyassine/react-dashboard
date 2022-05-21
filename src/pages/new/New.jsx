@@ -1,7 +1,4 @@
 import React, { useEffect, useState } from 'react';
-// Components
-import Sidebar from '../../components/sidebar/Sidebar';
-import Navbar from '../../components/navbar/Navbar';
 // Icons
 import AttachFileRoundedIcon from '@mui/icons-material/AttachFileRounded';
 // Style
@@ -20,9 +17,7 @@ const New = ({ inputs, title }) => {
 
   return (
     <div className='new'>
-      <Sidebar />
-      <div className='newContainer'>
-        <Navbar />
+      <div className='container newContainer'>
         <div className='top'>
           <h2 className='title'>{title}</h2>
         </div>

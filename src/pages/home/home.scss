@@ -1,6 +1,14 @@
 .home {
   display: flex;
 
+  .homeContainer {
+    flex: 6;
+
+    @media (max-width: 1024px) {
+      flex: 2;
+    }
+  }
+
   .widgets,
   .charts {
     display: flex;
@@ -11,6 +19,16 @@
   .charts {
     padding: 5px 20px;
     max-width: 100%;
+
+    @media (max-width: 1024px) {
+      flex-direction: column;
+    }
+  }
+
+  .widgets {
+    @media (max-width: 1024px) {
+      flex-direction: column;
+    }
   }
 
   .listContainer {

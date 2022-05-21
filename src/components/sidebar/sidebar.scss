@@ -1,7 +1,6 @@
 .sidebar {
   background-color: #fff;
-  max-width: 250px;
-  width: 100%;
+  width: 200px;
   border-right: 0.5px solid rgb(255, 230, 230);
   height: 100vh;
   display: flex;
@@ -28,7 +27,6 @@
       position: absolute;
       top: 14px;
       left: 20px;
-      // transform: translateY(-50%);
       font-size: 24px;
       cursor: pointer;
     }
@@ -75,12 +73,10 @@
         display: flex;
         align-items: center;
         padding: 5px 15px;
-        cursor: pointer;
-        padding: 10px;
         margin-top: 15px;
         margin-bottom: 5px;
-
         width: 100%;
+        cursor: pointer;
 
         span {
           color: #000;

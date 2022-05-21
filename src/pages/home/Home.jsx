@@ -10,7 +10,7 @@ import './home.scss';
 const Home = () => {
   return (
     <section className='home'>
-      <div className='container'>
+      <div className='container homeContainer'>
         <div className='widgets'>
           <Widget type='user' />
           <Widget type='order' />

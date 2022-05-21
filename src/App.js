@@ -15,6 +15,7 @@ import { DarkModeContext } from './context/darkModeContext';
 // Data
 import { userInputs, productInputs } from './data/formSource';
 // Styles
+import './App.css';
 import './style/dark.scss';
 import './style/global.scss';
 

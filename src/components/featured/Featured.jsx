@@ -29,7 +29,7 @@ const Featured = () => {
               pathTransitionDuration: 0.5,
               strokeLinecap: 'round',
               trailColor: '#d6d6d6',
-              textColor: 'rgb(255, 30, 0)',
+              textColor: '#ff8e7f',
               pathColor: `rgba(255, 30, 0, ${percentage / 100})`,
             })}
           />

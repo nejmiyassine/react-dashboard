@@ -1,16 +1,21 @@
 .navbar {
-  height: 52px;
-  // border-bottom: 2px solid rgb(255, 230, 230);
+  height: 100%;
   display: flex;
   align-items: center;
   font-size: 14px;
+  padding: 20px 0;
 
   .wrapper {
     width: 100%;
-    padding: 20px;
+    padding: 0 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media (max-width: 500px) {
+      flex-direction: column;
+      justify-content: center;
+    }
 
     .search {
       display: flex;
@@ -33,12 +38,24 @@
       display: flex;
       align-items: center;
 
+      @media (max-width: 500px) {
+        margin-top: 10px;
+      }
+
       .item {
         display: flex;
         align-items: center;
         margin-right: 20px;
         position: relative;
         cursor: pointer;
+
+        @media (max-width: 500px) {
+          margin-right: 0;
+
+          &:not(:first-child) {
+            margin-left: 20px;
+          }
+        }
 
         .icon {
           font-size: 20px;

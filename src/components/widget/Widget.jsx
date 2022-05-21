@@ -72,6 +72,7 @@ const Widget = ({ type }) => {
     default:
       break;
   }
+
   return (
     <div className='widget'>
       <div className='left'>

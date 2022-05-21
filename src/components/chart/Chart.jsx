@@ -14,6 +14,7 @@ import {
 import './chart.scss';
 
 const Chart = ({ aspect, title }) => {
+  // Chart Data
   const data = [
     {
       name: 'January',
@@ -46,8 +47,6 @@ const Chart = ({ aspect, title }) => {
       <div className='title'>{title}</div>
       <ResponsiveContainer width='100%' height='100%' aspect={aspect}>
         <AreaChart
-          width={730}
-          height={250}
           data={data}
           margin={{ top: 10, right: 30, left: 0, bottom: 0 }}
         >

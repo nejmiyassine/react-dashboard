@@ -2,7 +2,7 @@
 
 Admin Dashboard using React & Scss
 
-You can visite the dashboard: [React Dashboard]('https://reactdashboard01.netlify.app/')
+You can visite the dashboard: [React Dashboard](https://reactdashboard01.netlify.app/)
 
 - ## Light Home Page
 
@@ -37,3 +37,4 @@ You can visite the dashboard: [React Dashboard]('https://reactdashboard01.netlif
 ![Dark New User Page]('./../src/assets/images/DarkNewUserPage.png)
 
 - Hope you like it.
+- Follow my instagram [@yassinecode](https://www.instagram.com/yassinecode/)

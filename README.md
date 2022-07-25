@@ -2,7 +2,7 @@
 
 Admin Dashboard using React & Scss
 
-You can visite the dashboard: [React Dashboard](https://reactdashboard01.netlify.app/)
+You can visite the dashboard: [React Dashboard](https://admin-dashboard-react1.netlify.app/)
 
 - ## Light Home Page
 
